@@ -103,8 +103,6 @@ export async function GET(request: NextRequest) {
 
 ## QR Image Examples
 
-These sample outputs are embedded with absolute GitHub raw URLs so they render on both GitHub and npm.
-
 ### URL Example (`https://example.com`)
 
 ![QR code URL example](https://raw.githubusercontent.com/AaronAnablon/qrgenerator/main/assets/readme/qr-url-example.svg)
