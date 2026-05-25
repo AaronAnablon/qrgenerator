@@ -13,7 +13,7 @@ A TypeScript library for generating QR codes with no runtime dependencies.
 ## Installation
 
 ```bash
-npm install qr-code-generator
+npm i react-qr-code-generator-by-aaron
 ```
 
 ## Quick Start (Next.js App Router)
@@ -22,7 +22,7 @@ Use a Server Component when QR data is known at render time:
 
 ```tsx
 // app/qr/page.tsx
-import { ErrorCorrectionLevel, generateQRCodeDataURI } from 'qr-code-generator';
+import { ErrorCorrectionLevel, generateQRCodeDataURI } from 'react-qr-code-generator-by-aaron';
 
 export default function QRPage() {
   const dataUri = generateQRCodeDataURI('https://example.com', {
@@ -49,7 +49,7 @@ For user-entered values, use a Client Component and memoize generation:
 'use client';
 
 import { useMemo, useState } from 'react';
-import { ErrorCorrectionLevel, generateQRCodeDataURI } from 'qr-code-generator';
+import { ErrorCorrectionLevel, generateQRCodeDataURI } from 'react-qr-code-generator-by-aaron';
 
 export function QRPreview() {
   const [value, setValue] = useState('https://example.com');
@@ -82,7 +82,7 @@ For shared/cached QR generation, use a Route Handler:
 ```ts
 // app/api/qr/route.ts
 import { NextRequest } from 'next/server';
-import { ErrorCorrectionLevel, generateQRCodeSVG } from 'qr-code-generator';
+import { ErrorCorrectionLevel, generateQRCodeSVG } from 'react-qr-code-generator-by-aaron';
 
 export async function GET(request: NextRequest) {
   const text = request.nextUrl.searchParams.get('text') || 'https://example.com';

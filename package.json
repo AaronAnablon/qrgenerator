@@ -1,6 +1,6 @@
 {
   "name": "react-qr-code-generator-by-aaron",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A TypeScript QR code generator (versions 1-6) with SVG, ASCII, and data URI renderers",
   "main": "dist/index.js",
   "exports": {
