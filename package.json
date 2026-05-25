@@ -1,0 +1,41 @@
+{
+  "name": "react-qr-code-generator-by-aaron",
+  "version": "1.0.0",
+  "description": "A TypeScript QR code generator (versions 1-6) with SVG, ASCII, and data URI renderers",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node test-simple.js",
+    "example": "node test-simple.js",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "qr",
+    "qrcode",
+    "qr-code",
+    "generator",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
